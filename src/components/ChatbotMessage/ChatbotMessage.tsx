@@ -8,6 +8,7 @@ import './ChatbotMessage.css';
 import { callIfExists } from '../Chat/chatUtils';
 import { ICustomComponents, ICustomStyles } from '../../interfaces/IConfig';
 
+var Latex = require('react-latex');
 interface IChatbotMessageProps {
   message: string;
   withAvatar?: boolean;
