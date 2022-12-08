@@ -113,7 +113,11 @@ const ChatbotMessage = ({
                 <ConditionallyRender
                   condition={loading}
                   show={<Loader />}
-                  elseShow={<span>{message}</span>}
+                  elseShow={
+                    <span>
+                      <Latex>{message}</Latex>
+                    </span>
+                  }
                 />
                 <ConditionallyRender
                   condition={withAvatar}
